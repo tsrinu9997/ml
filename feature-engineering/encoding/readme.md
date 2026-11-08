@@ -176,3 +176,29 @@ Choose an encoding that preserves what a category means:
 - Use other encodings for many-category features only when their trade-offs and leakage risks are understood.
 
 When uncertain, start with the simplest representation that matches the data, inspect it, and compare alternatives using a proper validation workflow.
+
+## Applications of encoding
+
+Encoding is used whenever a model receives non-numerical information:
+
+- **Customer analytics:** encode region, membership tier, channel, and product category.
+- **Marketing:** encode campaign type, browser, device, and audience segment.
+- **Healthcare:** encode diagnosis group, treatment type, and care setting.
+- **Finance:** encode occupation, loan purpose, branch, and risk band.
+- **Retail:** encode brand, store, department, and delivery method.
+- **Natural-language systems:** represent words, tokens, or product identifiers with hashing or learned embeddings.
+- **Time-based data:** extract and encode weekday, month, holiday, or season from dates.
+
+For every application, ask whether the category is unordered, ordered, high-cardinality, or available only after the outcome. The encoding should preserve the useful meaning and avoid leakage.
+
+## Interview checklist
+
+Before choosing an encoder, be ready to explain:
+
+1. Why is this column categorical rather than numerical?
+2. Does the category have a genuine order?
+3. How many unique values are there?
+4. What happens when a new category appears?
+5. Could the encoder use target information and leak the answer?
+6. Was the encoder fitted inside the training fold?
+7. How did validation performance and interpretability change?
