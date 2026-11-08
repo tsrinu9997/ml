@@ -5,6 +5,8 @@ This folder mirrors the three outlier examples listed in the Feature-engine exam
 - [Winsorizer.ipynb](Winsorizer.ipynb) detects statistical extremes and caps them at learned limits while keeping every row.
 - [ArbitraryOutlierCapper.ipynb](ArbitraryOutlierCapper.ipynb) caps values at limits supplied by the analyst or a domain specification.
 - [OutlierTrimmer.ipynb](OutlierTrimmer.ipynb) removes rows that are outside the selected statistical limits.
+- [Removing-outliers-pandas.ipynb](Removing-outliers-pandas.ipynb) demonstrates pandas-only trimming with IQR, normal-distribution, and quantile limits.
+- [Capping-outliers-pandas.ipynb](Capping-outliers-pandas.ipynb) demonstrates pandas-only capping with normal, IQR, and quantile limits.
 
 Titanic-specific versions are also included:
 

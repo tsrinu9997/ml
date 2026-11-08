@@ -26,6 +26,8 @@ The “training data only” rule is extremely important. If information from th
 | [`encoding/`](encoding/) | Translate words/categories into numbers | One-hot, ordinal, mean/target encoding | Titanic, cars, customers |
 | [`discretisation/`](discretisation/) | Turn a continuous number into understandable bins | Arbitrary and decision-tree bins | House-price style data |
 | [`pipelines/`](pipelines/) | Put the complete recipe into one repeatable object | Feature-engine + scikit-learn pipelines | Adult income, wine, houses |
+| [`Date-Time-Features/`](Date-Time-Features/) | Turn timestamps into calendar, clock, duration, and local-time features | Pandas datetime operations and Feature-engine DatetimeFeatures | Synthetic order and event data |
+| [`featurecreation/`](featurecreation/) | Combine columns and model non-linear relationships | Mathematical, relative, polynomial, and spline features | Ames house prices |
 
 ## A safe project workflow
 
